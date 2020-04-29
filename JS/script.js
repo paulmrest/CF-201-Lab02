@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 alert('Welcome to my page. We\'re going to play a game');
 
@@ -13,9 +13,9 @@ if (userName.toLowerCase().startsWith('a') ||
   userName.toLowerCase().startsWith('o') ||
   userName.toLowerCase().startsWith('u'))
 {
-  alert('Lucky you didn\'t have to live through The Great Vowel Shift. That would have been most confusing!')
+  alert('Lucky you didn\'t have to live through The Great Vowel Shift. That would have been most confusing!');
 }
-else if (userName.length == 7)
+else if (userName.length === 7)
 {
   alert('Seven letters in your name. What a charmed life. ' + userName + ', may your stay here continue that.');
 }
@@ -56,7 +56,7 @@ var twoPastaServings = prompt('When making pasta for two, how much is the correc
 // console.log('twoPastaServings: ' + twoPastaServings);
 //END-CONSOLE-TESTING
 var randomNumber = Math.round(Math.random());
-if (randomNumber == 0)
+if (randomNumber === 0)
 {
   alert('Wrong! ' + twoPastaServings + ' is not nearly enough pasta for two people.');
 }
