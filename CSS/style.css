@@ -1,0 +1,34 @@
+body {
+  margin: 1%;
+  padding: 5px;
+  max-width: 80%;
+  border: solid gray 5px;
+}
+
+h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+div#intro p {
+  margin: 10px 0px 10px 0px;
+  text-align: justify;
+}
+
+div#skillset p {
+  font-size: 1.25em;
+}
+
+.ulist {
+  list-style: square inside;
+}
+
+ul.ulist li {
+  padding-left: 1%;
+}
