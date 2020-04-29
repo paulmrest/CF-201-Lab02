@@ -4,7 +4,7 @@ alert('Welcome to my page. We\'re going to play a game');
 
 var userName = prompt('What\'s your name?');
 //START-CONSOLE-TESTING
-console.log('userName: ' + userName);
+// console.log('userName: ' + userName);
 //END-CONSOLE-TESTING
 
 if (userName.toLowerCase().startsWith('a') ||
@@ -31,7 +31,7 @@ else
 
 var macBethMuppet = prompt('If you were stage a production of The Scottish Play with Muppets, who would play the lead role?');
 //START-CONSOLE-TESTING
-console.log('macBethMuppet: ' + macBethMuppet);
+// console.log('macBethMuppet: ' + macBethMuppet);
 //END-CONSOLE-TESTING
 
 
@@ -53,9 +53,8 @@ else {
 
 var twoPastaServings = prompt('When making pasta for two, how much is the correct amount of pasta to cook?');
 //START-CONSOLE-TESTING
-console.log('twoPastaServings: ' + twoPastaServings);
+// console.log('twoPastaServings: ' + twoPastaServings);
 //END-CONSOLE-TESTING
-
 var randomNumber = Math.round(Math.random());
 if (randomNumber == 0)
 {
@@ -68,12 +67,12 @@ else
 
 var pastaSauce = prompt('What\'s the best sauce for your ' + twoPastaServings + ' of pasta that you\'ll eat with ' + macBethMuppet + ' while discussing why they should get the part?');
 //START-CONSOLE-TESTING
-console.log('pastaSauce: ' + pastaSauce);
+// console.log('pastaSauce: ' + pastaSauce);
 //END-CONSOLE-TESTING
 
 var trinket = prompt('Oh no! ' + macBethMuppet + ' just spilled ' + pastaSauce + ' all over your white tablecloth. Since you\'re petty, what meaningless trinket will you pay them with for being your play?');
 //START-CONSOLE-TESTING
-console.log('trinket: ' + trinket);
+// console.log('trinket: ' + trinket );
 //END-CONSOLE-TESTING
 
 alert('Whoops! It\'s a few months later and ' + macBethMuppet + ' found out that the ' + trinket + ' you gave them is worth more than you\'ll earn in your entire lifetime. So they\'re not going do your play anymore. Enjoy your ' + twoPastaServings + ' of pasta and ' + pastaSauce + '. Better luck next time ' + userName + '.');
