@@ -16,6 +16,11 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+
 div#intro p {
   margin: 10px 0px 10px 0px;
   text-align: justify;
@@ -30,5 +35,14 @@ div#skillset p {
 }
 
 ul.ulist li {
+  padding-left: 1%;
+}
+
+.olist {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+ol.ulist li {
   padding-left: 1%;
 }
