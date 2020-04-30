@@ -3,6 +3,7 @@
 // Lab 02 - About Me Guessing Game
 alert('Hi there. We\'re going to play a guessing game about me!');
 
+var numberOfQuestions = 7;
 var totalCorrectCounter = 0;
 var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
 //START-CONSOLE-TESTING
@@ -10,17 +11,19 @@ var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
 //END-CONSOLE-TESTING
 alert('Welcome ' + userName + ', looking good!');
 
+//realistically I'd define a class called something like "Score" to encapsulate the totalCorrectCounter variable, and pass a reference to an instance of that class to each function, but since we're not usingobjects yet this felt like the most OOPish way of handling this
 totalCorrectCounter += theRealPaul(userName);
 totalCorrectCounter += hairEnvy(userName);
 totalCorrectCounter += arnoldSchwarzenegger(userName);
 totalCorrectCounter += messier101Spiral(userName);
+totalCorrectCounter += englishBreakfast(userName);
 totalCorrectCounter += randomNumberGuessing(userName);
 totalCorrectCounter += bondGuessingGame(userName);
 
-alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' questions right.');
+alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' out of ' + numberOfQuestions + ' questions right.');
 
 //functions
-function theRealPaul(userName){
+function theRealPaul(userName) {
   var theRealPaulGuess = prompt(userName + ', are you talking to the real Paul right now?');
   //START-CONSOLE-TESTING
   // console.log( theRealPaulGuess: ' + theRealPaulGuess);
@@ -39,7 +42,7 @@ function theRealPaul(userName){
   }
 }
 
-function hairEnvy(userName){
+function hairEnvy(userName) {
   var hairEnvyGuess = prompt('Are you envious of Paul\'s hair?');
   //START-CONSOLE-TESTING
   // console.log('hairEnvyGuess: ' + hairEnvyGuess);
@@ -78,7 +81,7 @@ function arnoldSchwarzenegger(userName) {
   }
 }
 
-function messier101Spiral(userName){
+function messier101Spiral(userName) {
   var messier101SpiralGuess = prompt('Can your naked eye see spiral structure in Messier 101 with a 12 inch telescope?');
   //START-CONSOLE-TESTING
   // console.log('messier101SpiralGuess: ' + messier101SpiralGuess);
@@ -97,11 +100,30 @@ function messier101Spiral(userName){
   }
 }
 
+//third question for Lab02 - added on 4/30
+function englishBreakfast(userName) {
+  var englishBreakfastGuess = prompt('Are full English breakfasts the best breakfasts?');
+  //START-CONSOLE-TESTING
+  // console.log('englishBreakfastGuess: ' + englishBreakfastGuess);
+  //END-CONSOLE-TESTING
+  if (englishBreakfastGuess.toLowerCase() === 'yes' ||
+      englishBreakfastGuess.toLowerCase() === 'y' ||
+      englishBreakfastGuess.toLowerCase() === 'yeah')
+  {
+    alert('Yeah ' + userName + '! Who doesn\'t want beans and toast for breakfast?');
+    return 1;
+  }
+  else
+  {
+    alert('Very little good came out of the British Empire. You\'re missing out on the one good thing that did.');
+    return 0;
+  }
+}
 
 //Lab03 - Expanding 'About Me' Guessing Games
 
 //Number guessing game
-function randomNumberGuessing(userName){
+function randomNumberGuessing(userName) {
   alert('Next, ' + userName + ', we\'re going to try a number guessing game.');
   //choose a random number >= 1 and <= 20
   const randomNumber = Math.floor(Math.random() * (20 + 1)) + 1;
@@ -161,7 +183,7 @@ function randomNumberGuessing(userName){
 }
 
 //Multiple) correct answers guessing game
-function bondGuessingGame(userName){
+function bondGuessingGame(userName) {
   alert('Now, ' + userName + ' we\'re going to try a different sort of guessing game!');
   const seanConneryBondFilms = [
     'Dr. No',
@@ -215,6 +237,7 @@ function bondGuessingGame(userName){
       break;
     }
   }
+  //print the array of possible answers to an alert()
   var prettyPrintSeanConneryBondFilms = '';
   for (var j = 0; j < seanConneryBondFilms.length; j++)
   {
@@ -230,5 +253,3 @@ function bondGuessingGame(userName){
     return 0;
   }
 }
-
-
