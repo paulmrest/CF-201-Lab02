@@ -11,3 +11,8 @@ Extended guessing game to include the following:
 * A random number guessing game
 * A guessing game with multiple correct answers
 * A notification to the user of how many answers they got "right"
+
+## Code Fellows - 201 - Lab 04: Pair Programming
+
+Driver: Leah Russo
+Navigator: Paul Rest
