@@ -6,13 +6,13 @@ alert('Hi there. We\'re going to play a guessing game about me!');
 var totalCorrectCounter = 0;
 var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
 //START-CONSOLE-TESTING
-console.log('userName: ' + userName);
+// console.log('userName: ' + userName);
 //END-CONSOLE-TESTING
 alert('Welcome ' + userName + ', looking good!');
 
 var theRealPaul = prompt(userName + ', are you talking to the real Paul right now?');
 //START-CONSOLE-TESTING
-console.log('theRealPaul: ' + theRealPaul);
+// console.log('theRealPaul: ' + theRealPaul);
 //END-CONSOLE-TESTING
 if (theRealPaul.toLowerCase() === 'yes' ||
     theRealPaul.toLowerCase() === 'y' ||
@@ -28,7 +28,7 @@ else
 
 var hairEnvy = prompt('Are you envious of Paul\'s hair?');
 //START-CONSOLE-TESTING
-console.log('hairEnvy: ' + hairEnvy);
+// console.log('hairEnvy: ' + hairEnvy);
 //END-CONSOLE-TESTING
 if (hairEnvy.toLowerCase() === 'yes' ||
     hairEnvy.toLowerCase() === 'y' ||
@@ -44,7 +44,7 @@ else
 
 var arnoldSchwarzenegger = prompt('Did Arnold Schwarzenegger kill Paul\'s grandmother?');
 //START-CONSOLE-TESTING
-console.log('arnoldSchwarzenegger: ' + arnoldSchwarzenegger);
+// console.log('arnoldSchwarzenegger: ' + arnoldSchwarzenegger);
 //END-CONSOLE-TESTING
 if (arnoldSchwarzenegger.toLowerCase() === 'yes' ||
     arnoldSchwarzenegger.toLowerCase() === 'y' ||
@@ -60,7 +60,7 @@ else
 
 var messier101Spiral = prompt('Can your naked eye see spiral structure in Messier 101 with a 12 inch telescope?');
 //START-CONSOLE-TESTING
-console.log('messier101Spiral: ' + messier101Spiral);
+// console.log('messier101Spiral: ' + messier101Spiral);
 //END-CONSOLE-TESTING
 if (messier101Spiral.toLowerCase() === 'yes' ||
     messier101Spiral.toLowerCase() === 'y' ||
@@ -84,15 +84,15 @@ const numAllowedGuesses = 4;
 var numGuessCount = 0;
 var numCorrectlyGuessed = false;
 //START-CONSOLE-TESTING
-console.log('randomNumber: ' + randomNumber);
+// console.log('randomNumber: ' + randomNumber);
 //END-CONSOLE-TESTING
 while (!numCorrectlyGuessed)
 {
   var userGuess = prompt('Guess a number between 1 and 20. You have ' +
   (numAllowedGuesses - numGuessCount) + ' guesses remaining. Enter \'x\' to exit.');
   //START-CONSOLE-TESTING
-  console.log('userGuess: ' + userGuess);
-  console.log('numGuessCount: ' + numGuessCount);
+  // console.log('userGuess: ' + userGuess);
+  // console.log('numGuessCount: ' + numGuessCount);
   //END-CONSOLE-TESTING
   if (userGuess.toLowerCase() === 'x')
   {
@@ -140,7 +140,7 @@ const seanConneryBondFilms = [
 ];
 
 //START-CONSOLE-TESTING
-console.log('seanConneryBondFilms: ' + seanConneryBondFilms);
+// console.log('seanConneryBondFilms: ' + seanConneryBondFilms);
 //END-CONSOLE-TESTING
 
 const bondAllowedGuesses = 6;
@@ -151,8 +151,8 @@ while (!bondCorrectlyGuessed)
   var bondUserGuess = prompt('Name a Sean Connery Bond film. You have ' + (bondAllowedGuesses - bondGuessCount) + ' guesses remaining. Enter \'x\' to exit.');
 
   //START-CONSOLE-TESTING
-  console.log('bondUserGuess: ' + bondUserGuess);
-  console.log('bondGuessCount: ' + bondGuessCount);
+  // console.log('bondUserGuess: ' + bondUserGuess);
+  // console.log('bondGuessCount: ' + bondGuessCount);
   //END-CONSOLE-TESTING
 
   if (bondUserGuess.toLowerCase() === 'x')
