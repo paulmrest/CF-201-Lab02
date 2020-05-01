@@ -1,26 +1,7 @@
 'use strict';
 
 // Lab 02 - About Me Guessing Game
-alert('Hi there. We\'re going to play a guessing game about me!');
-
-var numberOfQuestions = 7;
-var totalCorrectCounter = 0;
-var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
-//START-CONSOLE-TESTING
-// console.log('userName: ' + userName);
-//END-CONSOLE-TESTING
-alert('Welcome ' + userName + ', looking good!');
-
-//realistically I'd define a class called something like "Score" to encapsulate the totalCorrectCounter variable, and pass a reference to an instance of that class to each function, but since we're not usingobjects yet this felt like the most OOPish way of handling this
-totalCorrectCounter += theRealPaul(userName);
-totalCorrectCounter += hairEnvy(userName);
-totalCorrectCounter += arnoldSchwarzenegger(userName);
-totalCorrectCounter += messier101Spiral(userName);
-totalCorrectCounter += englishBreakfast(userName);
-totalCorrectCounter += randomNumberGuessing(userName);
-totalCorrectCounter += bondGuessingGame(userName);
-
-alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' out of ' + numberOfQuestions + ' questions right.');
+// Lab 03 - Expanding About Me Guessing Game
 
 //functions
 function theRealPaul(userName) {
@@ -63,7 +44,7 @@ function hairEnvy(userName) {
 }
 
 function arnoldSchwarzenegger(userName) {
-  var arnoldSchwarzeneggerGuess = prompt('Did Arnold Schwarzenegger kill Paul\'s grandmother?')
+  var arnoldSchwarzeneggerGuess = prompt('Did Arnold Schwarzenegger kill Paul\'s grandmother?');
   //START-CONSOLE-TESTING
   // console.log('arnoldSchwareneggerGuess: ' + arnoldSchwarzeneggerGuess);
   //END-CONSOLE-TESTIN
@@ -253,3 +234,25 @@ function bondGuessingGame(userName) {
     return 0;
   }
 }
+
+//executable
+alert('Hi there. We\'re going to play a guessing game about me!');
+
+var numberOfQuestions = 7;
+var totalCorrectCounter = 0;
+var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
+//START-CONSOLE-TESTING
+// console.log('userName: ' + userName);
+//END-CONSOLE-TESTING
+alert('Welcome ' + userName + ', looking good!');
+
+//realistically I'd define a class called something like "Score" to encapsulate the totalCorrectCounter variable, and pass a reference to an instance of that class to each function, but since we're not usingobjects yet this felt like the most OOPish way of handling this
+totalCorrectCounter += theRealPaul(userName);
+totalCorrectCounter += hairEnvy(userName);
+totalCorrectCounter += arnoldSchwarzenegger(userName);
+totalCorrectCounter += messier101Spiral(userName);
+totalCorrectCounter += englishBreakfast(userName);
+totalCorrectCounter += randomNumberGuessing(userName);
+totalCorrectCounter += bondGuessingGame(userName);
+
+alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' out of ' + numberOfQuestions + ' questions right.');
