@@ -2,7 +2,7 @@ body {
   margin: 1%;
   padding: 5px;
   max-width: 80%;
-  border: solid gray 5px;
+  /* border: solid gray 5px; */
 }
 
 h1 {
@@ -19,6 +19,12 @@ h2 {
 h3 {
   margin-top: 5px;
   font-size: 1.5em;
+}
+
+div {
+  border: solid black 5px;
+  margin: 5px;
+  padding: 3px;
 }
 
 div#intro p {
@@ -45,4 +51,27 @@ ul.ulist li {
 
 ol.ulist li {
   padding-left: 1%;
+}
+
+div#guessinggame {
+  text-align: center;
+}
+
+div#guessinggame input {
+  margin: 5px;
+}
+
+div#contactinfo>ul {
+  text-align: center;
+}
+
+div#contactinfo>ul>li{
+  display: inline-block;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#contactinfo img {
+  width: 50px;
 }

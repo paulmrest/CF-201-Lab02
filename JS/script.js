@@ -236,23 +236,24 @@ function bondGuessingGame(userName) {
 }
 
 //executable
-alert('Hi there. We\'re going to play a guessing game about me!');
+playGuessingGame();
 
-var numberOfQuestions = 7;
-var totalCorrectCounter = 0;
-var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
-//START-CONSOLE-TESTING
-// console.log('userName: ' + userName);
-//END-CONSOLE-TESTING
-alert('Welcome ' + userName + ', looking good!');
-
-//realistically I'd define a class called something like "Score" to encapsulate the totalCorrectCounter variable, and pass a reference to an instance of that class to each function, but since we're not usingobjects yet this felt like the most OOPish way of handling this
-totalCorrectCounter += theRealPaul(userName);
-totalCorrectCounter += hairEnvy(userName);
-totalCorrectCounter += arnoldSchwarzenegger(userName);
-totalCorrectCounter += messier101Spiral(userName);
-totalCorrectCounter += englishBreakfast(userName);
-totalCorrectCounter += randomNumberGuessing(userName);
-totalCorrectCounter += bondGuessingGame(userName);
-
-alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' out of ' + numberOfQuestions + ' questions right.');
+function playGuessingGame() {
+  alert('Hi there. We\'re going to play a guessing game about me!');
+  var numberOfQuestions = 7;
+  var totalCorrectCounter = 0;
+  var userName = prompt('First, let\'s introduce ourselves. What\'s your name?');
+  //START-CONSOLE-TESTING
+  // console.log('userName: ' + userName);
+  //END-CONSOLE-TESTING
+  alert('Welcome ' + userName + ', looking good!');
+  //realistically I'd define a class called something like "Score" to encapsulate the totalCorrectCounter variable, and pass a reference to an instance of that class to each function, but since we're not using objects yet this felt like the most OOPish way of handling this
+  totalCorrectCounter += theRealPaul(userName);
+  totalCorrectCounter += hairEnvy(userName);
+  totalCorrectCounter += arnoldSchwarzenegger(userName);
+  totalCorrectCounter += messier101Spiral(userName);
+  totalCorrectCounter += englishBreakfast(userName);
+  totalCorrectCounter += randomNumberGuessing(userName);
+  totalCorrectCounter += bondGuessingGame(userName);
+  alert('Thanks for playing my games. You got a total of ' + totalCorrectCounter + ' out of ' + numberOfQuestions + ' questions right.');
+}
